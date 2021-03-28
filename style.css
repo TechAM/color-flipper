@@ -1,27 +1,36 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #container{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
 }
 
-#text{
+#color_flipper, #counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
     position: relative;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
+    font-size: 1rem;
     border: 1px solid black;
     box-shadow: 3px 3px;
     padding: 2px;
     background-color: white;
 }
+.buttonGroup{
+    display: flex;
+}
 
-#changeBtn{
+button{
     position: relative;
     border:none;
     outline:none;
@@ -31,7 +40,7 @@ body{
     box-shadow: 3px 3px;
 }
 
-#changeBtn:hover{
+button:hover{
     box-shadow: none;
     left: 3px;
     top: 3px;
